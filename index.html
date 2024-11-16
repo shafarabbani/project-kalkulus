@@ -5,281 +5,369 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fungsi Kuadrat</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link href="styles/styles.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <!-- Tambahkan ini untuk menghubungkan JS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body>
-    <header>
-      <div class="nav">
-        <div class="logo">
-          <a href="/">FK</a>
-        </div>
-
+  <body class="bg-gray-900 text-gray-200">
+    <!-- Header -->
+    <header
+      class="bg-gradient-to-r from-gray-800 to-gray-700 text-white shadow-lg"
+    >
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <a href="/" class="text-xl font-bold hover:text-yellow-400 transition">
+          FungsiKuadrat
+        </a>
         <nav>
-          <ul>
-            <li><a href="#Definisi">Definisi</a></li>
-            <li><a href="#Bentuk">Bentuk</a></li>
-            <li><a href="#Rumus">Rumus</a></li>
-            <li><a href="#Kalkulator">Kalkulator</a></li>
-            <li><a href="#Anggota">Anggota</a></li>
+          <ul class="flex space-x-6 text-sm">
+            <li>
+              <a href="#Definisi" class="hover:text-yellow-400 transition"
+                >Definisi</a
+              >
+            </li>
+            <li>
+              <a href="#Grafik" class="hover:text-yellow-400 transition"
+                >Grafik</a
+              >
+            </li>
+            <li>
+              <a href="#Rumus" class="hover:text-yellow-400 transition"
+                >Rumus</a
+              >
+            </li>
+            <li>
+              <a href="#Kalkulator" class="hover:text-yellow-400 transition"
+                >Kalkulator</a
+              >
+            </li>
+            <li>
+              <a href="#Anggota" class="hover:text-yellow-400 transition"
+                >Anggota</a
+              >
+            </li>
           </ul>
         </nav>
-
-        <div class="burger">
-          <div class="line-1"></div>
-          <div class="line-2"></div>
-          <div class="line-3"></div>
-        </div>
       </div>
     </header>
-    <main>
-      <section id="Hero" class="main-container">
-        <div class="hero-left">
-          <h3 class="pre-title">KELOMPOK 4</h3>
-          <h1 class="hero-name">FUNGSI <span>KUADRAT </span></h1>
-          <p>
-            Fungsi kuadrat adalah fungsi matematika yang memiliki variabel
-            dengan pangkat tertinggi 2. Fungsi kuadrat memiliki kaitan dengan
-            persamaan kuadrat, dan grafiknya berbentuk parabola. Fungsi kuadrat
-            memiliki beberapa komponen, yaitu variabel, koefisien, dan
-            konstanta. Bentuk umum dari fungsi kuadrat adalah ax² + bx + c = 0..
+
+<!-- Hero Section -->
+<section id="Hero" class="relative w-full bg-fixed bg-cover bg-center py-40 px-6 text-center lg:textleft"
+  <!-- Gradient Overlay for Background -->
+  <div
+  class="absolute inset-0 bg-gradient-to-r from-yellow-400 via-transparent to-yellow-600 opacity-10 pointer-events-none"
+></div>
+
+  <!-- Hero Content -->
+  <div class="max-w-4xl mx-auto relative z-10 text-white">
+    <!-- Subheading with Animation -->
+    <h3 class="text-yellow-400 uppercase tracking-widest mb-2 text-lg font-semibold animate__animated animate__fadeIn animate__delay-1s">
+      Jelajahi Dunia Kalkulus
+    </h3>
+    <!-- Main Heading with Animation -->
+    <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight mb-6 animate__animated animate__fadeIn animate__delay-1s">
+      Temukan Keindahan <span class="text-yellow-400">Fungsi Kuadrat</span>
+    </h1>
+    <!-- Paragraph with Animation -->
+    <p class="text-lg leading-relaxed mb-8 animate__animated animate__fadeIn animate__delay-2s">
+      Fungsi kuadrat adalah konsep dasar dalam matematika yang dapat ditemukan dalam banyak bidang. Pelajari bagaimana grafiknya terbentuk, rumusnya, dan aplikasinya dalam kehidupan sehari-hari.
+    </p>
+    <!-- Call-to-Action Button with Hover Effect -->
+    <button
+      class="mt-6 px-10 py-4 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-full shadow-lg transform transition-all duration-300 hover:scale-110 hover:shadow-xl focus:outline-none animate__animated animate__fadeIn animate__delay-3s"
+    >
+      Pelajari Lebih Lanjut
+    </button>
+  </div>
+</section>
+
+
+
+<!-- Definisi Section -->
+<section
+  id="Definisi"
+  class="py-20 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative"
+>
+  <div class="absolute top-0 left-0 w-full h-full bg-opacity-10 bg-gradient-to-br from-yellow-500 to-transparent pointer-events-none"></div>
+  <div class="max-w-4xl mx-auto relative z-10">
+    <div class="text-center">
+      <h3 class="text-yellow-400 uppercase tracking-widest mb-4 text-lg">
+        Definisi
+      </h3>
+      <h1 class="text-4xl font-extrabold leading-tight mb-6">
+        Apa Itu <span class="text-yellow-400">Fungsi Kuadrat?</span>
+      </h1>
+    </div>
+    <div class="bg-gray-800 rounded-xl shadow-lg p-8 mt-8">
+      <p class="text-lg text-gray-300 leading-relaxed">
+        Fungsi kuadrat adalah fungsi matematika yang memiliki bentuk umum 
+        <span class="text-yellow-400">y = ax² + bx + c</span>, dengan 
+        <span class="text-yellow-400">a, b</span>, dan 
+        <span class="text-yellow-400">c</span> sebagai konstanta, serta 
+        <span class="text-yellow-400">a ≠ 0</span>. Fungsi ini menghasilkan grafik berbentuk parabola yang simetris.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+        <div class="bg-gradient-to-br from-gray-700 to-gray-800 p-6 rounded-lg shadow-md">
+          <h2 class="text-yellow-400 font-bold text-xl mb-4">Sifat Utama</h2>
+          <ul class="list-disc list-inside text-gray-300 leading-relaxed">
+            <li>Parabola terbuka ke atas jika <span class="text-yellow-400">a > 0</span>.</li>
+            <li>Parabola terbuka ke bawah jika <span class="text-yellow-400">a < 0</span>.</li>
+            <li>Sumbu simetri: <span class="text-yellow-400">x = -b / 2a</span>.</li>
+            <li>Koordinat puncak: <span class="text-yellow-400">(-b / 2a, f(-b / 2a))</span>.</li>
+            <li>Puncak parabola menunjukkan nilai maksimum (jika <span class="text-yellow-400">a < 0</span>) atau minimum (jika <span class="text-yellow-400">a > 0</span>).</li>
+          </ul>
+        </div>
+        <div class="bg-gradient-to-br from-gray-700 to-gray-800 p-6 rounded-lg shadow-md">
+          <h2 class="text-yellow-400 font-bold text-xl mb-4">Visualisasi Parabola</h2>
+          <p class="text-gray-300 leading-relaxed">
+            Grafik fungsi kuadrat berbentuk parabola, yang memiliki sifat simetris terhadap sumbu simetri. Parabola ini terbuka ke atas atau ke bawah tergantung pada tanda konstanta 
+            <span class="text-yellow-400">a</span>.
+          </p>
+          <p class="text-gray-300 leading-relaxed mt-4">
+            Dengan memahami sifat ini, Anda dapat menentukan bentuk grafik hanya dengan melihat nilai 
+            <span class="text-yellow-400">a</span>, 
+            serta menggunakan rumus untuk menentukan titik-titik penting seperti puncak dan akar.
           </p>
         </div>
-      </section>
-      <section id="Definisi">
-        <div class="Definisi main-container">
-          <h3 class="pre-title">Definisi</h3>
-          <h1 class="section-title">Definisi</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            maiores reiciendis optio temporibus ea minus quo consectetur impedit
-            rem iste, beatae corporis ipsam ducimus debitis eius veritatis
-            natus, soluta molestiae.
-          </p>
-        </div>
-      </section>
-      <section id="Bentuk">
-        <div class="Bentuk main-container">
-          <h3 class="pre-title">Bentuk</h3>
-          <h1 class="section-title">Bentuk</h1>
-          <div style="display: flex; justify-content: center; gap: 30px">
-            <div class="card">
-              <div class="card-image">
-                <img
-                  src="https://placehold.co/400x300"
-                  alt="Agency Website Screenshot"
-                />
-              </div>
-              <div class="card-content">
-                <h3>Agency Website</h3>
-                <div class="tags">
-                  <span class="tag">React</span>
-                  <span class="tag">Tailwind</span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                  eligendi cupiditate asperiores nam, beatae repudiandae
-                  expedita fugit, quos dicta ut unde rerum vero repellat vitae.
-                </p>
-              </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Grafik Section -->
+    <section id="Grafik" class="py-20 px-6">
+      <div class="max-w-3xl mx-auto">
+        <h3 class="text-yellow-400 uppercase tracking-widest mb-2">Grafik</h3>
+        <h1 class="text-3xl font-bold mb-8">
+          Visualisasi Grafik Fungsi Kuadrat
+        </h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <!-- Card 1 -->
+          <div
+            class="card transform hover:scale-105 transition duration-300 shadow-lg bg-gray-800 rounded-lg"
+          >
+            <img
+              src="https://placehold.co/400x300"
+              alt="Kurva ke atas"
+              class="rounded-t-lg"
+            />
+            <div class="p-6">
+              <h3 class="text-yellow-400 font-semibold text-lg mb-2">
+                Kurva ke atas
+              </h3>
+              <p>
+                Grafik fungsi kuadrat berbentuk parabola yang terbuka ke atas
+                ketika nilai a > 0. Hal ini berarti bahwa puncak parabola berada
+                pada titik paling rendah, dan seiring dengan bertambahnya nilai
+                x, nilai y akan meningkat.
+              </p>
             </div>
-            <div class="card">
-              <div class="card-image">
-                <img
-                  src="https://placehold.co/400x300"
-                  alt="Agency Website Screenshot"
-                />
-              </div>
-              <div class="card-content">
-                <h3>Agency Website</h3>
-                <div class="tags">
-                  <span class="tag">React</span>
-                  <span class="tag">Tailwind</span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                  eligendi cupiditate asperiores nam, beatae repudiandae
-                  expedita fugit, quos dicta ut unde rerum vero repellat vitae.
-                </p>
-              </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="card transform hover:scale-105 transition duration-300 shadow-lg bg-gray-800 rounded-lg"
+          >
+            <img
+              src="https://placehold.co/400x300"
+              alt="Kurva ke bawah"
+              class="rounded-t-lg"
+            />
+            <div class="p-6">
+              <h3 class="text-yellow-400 font-semibold text-lg mb-2">
+                Kurva ke bawah
+              </h3>
+              <p>
+                Grafik fungsi kuadrat berbentuk parabola yang terbuka ke bawah
+                ketika nilai a < 0. Dalam hal ini, titik puncak parabola menjadi
+                titik tertinggi.
+              </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="Rumus">
-        <div class="Rumus main-container">
-          <h3 class="pre-title">Rumus</h3>
-          <h1 class="section-title">Rumus</h1>
-          <p>Rumus di sini</p>
-        </div>
-      </section>
+<!-- Rumus Section -->
+<section
+  id="Rumus"
+  class="py-20 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative"
+>
+  <!-- Decorative Background -->
+  <div
+    class="absolute inset-0 bg-gradient-to-r from-yellow-400 via-transparent to-yellow-600 opacity-10 pointer-events-none"
+  ></div>
+  <div class="max-w-5xl mx-auto relative z-10">
+    <div class="text-center">
+      <h3
+        class="text-yellow-400 uppercase tracking-widest mb-4 text-lg font-semibold"
+      >
+        Rumus
+      </h3>
+      <h1
+        class="text-4xl font-extrabold text-gray-100 leading-tight mb-6 animate-fade-in"
+      >
+        Jelajahi <span class="text-yellow-400">Rahasia Rumus</span> Fungsi Kuadrat
+      </h1>
+    </div>
+    <!-- Interactive Formula Box -->
+    <div
+      class="bg-gray-800 rounded-lg shadow-lg p-10 mt-8 hover:scale-105 transition-transform duration-300 ease-in-out"
+    >
+      <div
+        class="text-yellow-400 text-3xl font-mono font-semibold text-center animate-slide-up"
+      >
+        <code>f(x) = ax² + bx + c</code>
+      </div>
+      <p class="text-gray-300 text-lg leading-relaxed text-center mt-4">
+        Ini adalah bentuk umum dari persamaan fungsi kuadrat. Grafiknya
+        membentuk parabola yang indah dan memiliki banyak aplikasi.
+      </p>
+    </div>
+    <!-- Explanation Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+      <!-- Card 1 -->
+      <div
+        class="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:scale-105"
+      >
+        <h2 class="text-yellow-400 font-bold text-xl mb-4">Komponen Utama</h2>
+        <ul class="list-disc list-inside space-y-3 text-gray-300">
+          <li>
+            <span class="text-yellow-400">f(x)</span>: Fungsi kuadrat.
+          </li>
+          <li>
+            <span class="text-yellow-400">a</span> dan
+            <span class="text-yellow-400">b</span>: Koefisien.
+          </li>
+          <li><span class="text-yellow-400">c</span>: Konstanta.</li>
+          <li><span class="text-yellow-400">x</span>: Variabel.</li>
+        </ul>
+      </div>
+      <!-- Card 2 -->
+      <div
+        class="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:scale-105"
+      >
+        <h2 class="text-yellow-400 font-bold text-xl mb-4">Fakta Menarik</h2>
+        <ul class="list-disc list-inside space-y-3 text-gray-300">
+          <li>
+            <span class="text-yellow-400">a ≠ 0</span>: Jika
+            <span class="text-yellow-400">a = 0</span>, maka persamaan menjadi
+            linear.
+          </li>
+          <li>
+            Grafik berbentuk parabola yang terbuka ke atas (
+            <span class="text-yellow-400">a > 0</span>) atau ke bawah (
+            <span class="text-yellow-400">a < 0</span>).
+          </li>
+          <li>
+            Sumbu simetri: <span class="text-yellow-400">x = -b / 2a</span>.
+          </li>
+          <li>
+            Puncak parabola: <span class="text-yellow-400">(-b / 2a, f(-b / 2a))</span>).
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Closing Notes -->
+  </div>
+</section>
 
-      <section id="Kalkulator">
-        <div class="Kalkulator main-container">
-          <h3 class="pre-title">Kalkulator</h3>
-          <h1 class="section-title">Kalkulator</h1>
-          <p>Kalkulator di sini</p>
-        </div>
-      </section>
 
-      <section id="Anggota">
-        <div class="Anggota main-container">
-          <h3 class="pre-title">Anggota</h3>
-          <h1 class="section-title">Anggota</h1>
-          <div class="grid grid-cols-1 gap-10">
-            <!-- Card Anggota -->
-            <div
-              class="flex flex-row rounded-2xl bg-gray-200 max-w-5xl mx-auto"
-            >
-              <div class="rounded-l-2xl w-full h-auto basis-1/2">
-                <img
-                  src="https://placehold.co/400x300"
-                  alt="Foto Sapa"
-                  width="400"
-                  height="300"
-                  class="w-full h-auto rounded-l-2xl"
-                />
-              </div>
-              <div class="rounded-r-2xl p-10 basis-1/2">
-                <h4 class="text-lg font-semibold">
-                  MOCHAMAD FARIZ ARKAN NUGRAHA
-                </h4>
-                <div class="grid grid-cols-7 mt-4">
-                  <p class="col-span-2">NPM</p>
-                  <p class="col-span-5">: 247006111017</p>
-                  <p class="col-span-2">Kelas</p>
-                  <p class="col-span-5">: A</p>
-                  <p class="col-span-2">Instagram:</p>
-                  <p class="col-span-5">
-                    :
-                    <a
-                      href="https://instagram.com/farizarkammm"
-                      target="_blank"
-                      class="hover:text-blue-500 hover:underline transition ease-in-out duration-800"
-                      >@farizarkammm</a
-                    >
-                  </p>
-                  <p class="col-span-2">Tugas</p>
-                  <p class="col-span-5">: Pengembang Website</p>
-                </div>
-              </div>
-            </div>
-            <!-- Card Anggota -->
+    <!-- Kalkulator Section -->
+    <section id="Kalkulator" class="py-20 px-6">
+      <div class="max-w-3xl mx-auto">
+        <h3 class="text-yellow-400 uppercase tracking-widest mb-2">
+          Kalkulator
+        </h3>
+        <h1 class="text-3xl font-bold mb-4">Coba Kalkulator Interaktif!</h1>
+        <p class="text-lg leading-relaxed">
+          Gunakan kalkulator interaktif di bawah ini untuk menghitung nilai
+          fungsi kuadrat:
+        </p>
+        <iframe
+          src="https://www.geogebra.org/material/iframe/id/abcd1234"
+          width="100%"
+          height="500"
+          class="mt-6 border-2 border-yellow-400 rounded-lg"
+        ></iframe>
+      </div>
+    </section>
 
-            <!-- Card Anggota -->
-            <div
-              class="flex flex-row-reverse rounded-2xl bg-gray-200 max-w-5xl mx-auto"
-            >
-              <div class="rounded-r-2xl w-full h-auto basis-1/2">
-                <img
-                  src="https://placehold.co/400x300"
-                  alt="Foto Sapa"
-                  width="400"
-                  height="300"
-                  class="w-full h-auto rounded-r-2xl"
-                />
-              </div>
-              <div class="rounded-l-2xl p-10 basis-1/2">
-                <h4 class="text-lg font-semibold">Farhan Ramadhan</h4>
-                <div class="grid grid-cols-7 mt-4">
-                  <p class="col-span-2">NPM</p>
-                  <p class="col-span-5">: 247006111152</p>
-                  <p class="col-span-2">Kelas</p>
-                  <p class="col-span-5">: A</p>
-                  <p class="col-span-2">Instagram</p>
-                  <p class="col-span-5">
-                    :
-                    <a
-                      href="https://instagram.com/farizarkammm"
-                      target="_blank"
-                      class="hover:text-blue-500 hover:underline transition ease-in-out duration-800"
-                      >@farizarkammm</a
-                    >
-                  </p>
-                  <p class="col-span-2">Tugas</p>
-                  <p class="col-span-5">: Pengembang Website</p>
-                </div>
-              </div>
-            </div>
-            <!-- Card Anggota -->
+    <!-- Anggota Section -->
+<section
+id="Anggota"
+class="py-20 px-6 bg-gradient-to-b from-gray-800 via-gray-700 to-gray-800 text-center"
+>
+<div class="max-w-5xl mx-auto">
+  <h3 class="text-yellow-400 uppercase tracking-widest mb-2">Anggota Kelompok</h3>
+  <h1 class="text-3xl font-bold text-white mb-8">
+    Tim di Balik Website <span class="text-yellow-400">Fungsi Kuadrat</span>
+  </h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- Card 1 -->
+    <div class="team-member bg-gray-900 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out">
+      <img
+        src="https://placehold.co/100x100"
+        alt="Anggota 1"
+        class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-yellow-400"
+      />
+      <h2 class="text-xl font-semibold text-yellow-400">Shafa</h2>
+      <p class="text-sm text-gray-300 mb-2">Peran dalam Tim: Developer</p>
+      <p class="text-sm text-gray-400">
+        Shafa mengembangkan antarmuka pengguna dan memastikan tampilan website berjalan dengan baik.
+      </p>
+    </div>
+    <!-- Card 2 -->
+    <div class="team-member bg-gray-900 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out">
+      <img
+        src="https://placehold.co/100x100"
+        alt="Anggota 2"
+        class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-yellow-400"
+      />
+      <h2 class="text-xl font-semibold text-yellow-400">Ali</h2>
+      <p class="text-sm text-gray-300 mb-2">Peran dalam Tim: Designer</p>
+      <p class="text-sm text-gray-400">
+        Ali mendesain elemen-elemen visual yang menarik untuk meningkatkan pengalaman pengguna di website ini.
+      </p>
+    </div>
+    <!-- Card 3 -->
+    <div class="team-member bg-gray-900 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out">
+      <img
+        src="https://placehold.co/100x100"
+        alt="Anggota 3"
+        class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-yellow-400"
+      />
+      <h2 class="text-xl font-semibold text-yellow-400">Budi</h2>
+      <p class="text-sm text-gray-300 mb-2">Peran dalam Tim: Penulis Konten</p>
+      <p class="text-sm text-gray-400">
+        Budi bertanggung jawab untuk menyusun konten yang jelas dan mudah dipahami tentang fungsi kuadrat.
+      </p>
+    </div>
+    <!-- Card 4 -->
+    <div class="team-member bg-gray-900 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out">
+      <img
+        src="https://placehold.co/100x100"
+        alt="Anggota 4"
+        class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-yellow-400"
+      />
+      <h2 class="text-xl font-semibold text-yellow-400">Siti</h2>
+      <p class="text-sm text-gray-300 mb-2">Peran dalam Tim: Koordinator Proyek</p>
+      <p class="text-sm text-gray-400">
+        Siti mengkoordinasi dan memastikan seluruh tim bekerja dengan baik untuk mencapai tujuan proyek ini.
+      </p>
+    </div>
+  </div>
+</div>
+</section>
 
-            <!-- Card Anggota -->
-            <div
-              class="flex flex-row rounded-2xl bg-gray-200 max-w-5xl mx-auto"
-            >
-              <div class="rounded-l-2xl w-full h-auto basis-1/2">
-                <img
-                  src="https://placehold.co/400x300"
-                  alt="Foto Sapa"
-                  width="400"
-                  height="300"
-                  class="w-full h-auto rounded-l-2xl"
-                />
-              </div>
-              <div class="rounded-r-2xl p-10 basis-1/2">
-                <h4 class="text-lg font-semibold"></h4>
-                <div class="grid grid-cols-7 mt-4">
-                  <p class="col-span-2">NPM</p>
-                  <p class="col-span-5">: 247006111152</p>
-                  <p class="col-span-2">Kelas</p>
-                  <p class="col-span-5">: A</p>
-                  <p class="col-span-2">Instagram</p>
-                  <p class="col-span-5">
-                    :
-                    <a
-                      href="https://instagram.com/farizarkammm"
-                      target="_blank"
-                      class="hover:text-blue-500 hover:underline transition ease-in-out duration-800"
-                      >@farizarkammm</a
-                    >
-                  </p>
-                  <p class="col-span-2">Tugas</p>
-                  <p class="col-span-5">: Pengembang Website</p>
-                </div>
-              </div>
-            </div>
-            <!-- Card Anggota -->
 
-            <!-- Card Anggota -->
-            <div
-              class="flex flex-row-reverse rounded-2xl bg-gray-200 max-w-5xl mx-auto"
-            >
-              <div class="rounded-r-2xl w-full h-auto basis-1/2">
-                <img
-                  src="https://placehold.co/400x300"
-                  alt="Foto Sapa"
-                  width="400"
-                  height="300"
-                  class="w-full h-auto rounded-r-2xl"
-                />
-              </div>
-              <div class="rounded-l-2xl p-10 basis-1/2">
-                <h4 class="text-lg font-semibold">Nabil Diyah</h4>
-                <div class="grid grid-cols-7 mt-4">
-                  <p class="col-span-2">NPM</p>
-                  <p class="col-span-5">: 247006111152</p>
-                  <p class="col-span-2">Kelas</p>
-                  <p class="col-span-5">: A</p>
-                  <p class="col-span-2">Instagram</p>
-                  <p class="col-span-5">
-                    <a
-                      target="_blank"
-                      class="hover:text-blue-500 hover:underline transition ease-in-out duration-800"
-                      >@zhekabailaa</a
-                    >
-                  </p>
-                  <p class="col-span-2">Tugas</p>
-                  <p class="col-span-5">: Pengembang Website</p>
-                </div>
-              </div>
-            </div>
-            <!-- Card Anggota -->
-          </div>
-        </div>
-      </section>
-    </main>
-    <script src="./styles/style.jssx"></script>
+    <!-- Footer -->
+    <footer class="py-4 text-center bg-gray-800 text-sm text-gray-400">
+      © 2024 FungsiKuadrat. All Rights Reserved.
+    </footer>
   </body>
 </html>
