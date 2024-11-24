@@ -45,7 +45,9 @@
               >
             </li>
             <li>
-              <a href="#Rumus" class="hover:text-[#BC6FF1] transition">Rumus</a>
+              <a href="#Contoh Soal" class="hover:text-[#BC6FF1] transition"
+                >Contoh Soal</a
+              >
             </li>
             <li>
               <a href="#Kalkulator" class="hover:text-[#BC6FF1] transition"
@@ -278,52 +280,76 @@
       </div>
     </section>
 
-    <!-- Rumus Section -->
     <section
-      id="Rumus"
+      id="Contoh Soal"
       class="py-20 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative"
     >
       <div class="absolute top-0 left-0 w-full h-full"></div>
-      <div class="max-w-4xl mx-auto relative z-10">
-        <div class="text-center">
+      <div class="max-w-6xl mx-auto relative z-10">
+        <div class="text-center mb-10">
           <h3 class="text-[#892CDC] uppercase tracking-widest mb-4 text-lg">
-            Rumus
+            Contoh Soal
           </h3>
           <h1 class="text-4xl font-extrabold leading-tight mb-6">
-            Jelajahi <span class="text-[#892CDC]">Rumus</span> Fungsi Kuadrat
+            Pelajari <span class="text-[#892CDC]">Contoh Soal</span> Fungsi
+            Kuadrat
           </h1>
         </div>
         <div class="bg-gray-800 rounded-xl shadow-lg p-8 mt-8">
-          <p class="text-lg text-gray-300 leading-relaxed">
-            Fungsi kuadrat adalah salah satu fungsi dalam matematika yang
-            memiliki bentuk mirip dengan persamaan kuadrat. Jika persamaan
-            kuadrat ditulis sebagai
-            <span class="text-[#892CDC]">ax² + bx + c = 0</span>, maka fungsi
-            kuadrat memiliki bentuk berikut:
-          </p>
-          <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center mt-6">
-            <h2 class="text-[#892CDC] text-3xl font-semibold font-mono">
-              f(x) = ax² + bx + c
-            </h2>
-          </div>
-          <div
-            class="bg-gradient-to-br from-gray-700 to-gray-800 p-6 rounded-lg shadow-md mt-8"
-          >
-            <h2 class="text-[#892CDC] font-bold text-xl mb-4">Keterangan</h2>
-            <ul class="list-disc list-inside text-gray-300 leading-relaxed">
-              <li><span class="text-[#892CDC]">f(x)</span>: Fungsi kuadrat.</li>
-              <li>
-                <span class="text-[#892CDC]">a</span> dan
-                <span class="text-[#892CDC]">b</span>: Koefisien.
-              </li>
-              <li><span class="text-[#892CDC]">c</span>: Konstanta.</li>
-              <li><span class="text-[#892CDC]">x</span>: Variabel.</li>
-              <li>
-                <span class="text-[#892CDC]">a ≠ 0</span>: Nilai
-                <span class="text-[#892CDC]">a</span> tidak boleh sama dengan
-                nol.
-              </li>
-            </ul>
+          <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Bagian Penyelesaian -->
+            <div class="lg:w-1/2">
+              <h2 class="text-[#892CDC] font-bold text-2xl mb-4">
+                Penyelesaian
+              </h2>
+              <p class="text-gray-300 leading-relaxed mb-4">
+                Gambarlah grafik fungsi kuadrat
+                <span class="text-[#892CDC]">f(x) = x² - 2x - 8</span>.
+              </p>
+              <ul class="list-disc list-inside text-gray-300 leading-relaxed">
+                <li>
+                  <b>Titik Potong Sumbu X:</b>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>Persamaan: (x² - 2x - 8 = 0)</li>
+                    <li>Faktorisasi: (x + 2)(x - 4) = 0</li>
+                    <li>Hasil: (x₁ = 4, x₂ = -2)</li>
+                  </ul>
+                  Koordinat: <b>(4, 0)</b> dan <b>(-2, 0)</b>
+                </li>
+                <li class="mt-4">
+                  <b>Titik Potong Sumbu Y:</b>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>Substitusi (x = 0): f(0) = 0² - 2(0) - 8 = -8</li>
+                  </ul>
+                  Koordinat: <b>(0, -8)</b>
+                </li>
+                <li class="mt-4">
+                  <b>Titik Balik (Vertex):</b>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>Hitung x = -b / (2a) = - (-2) / 2(1) = 1</li>
+                    <li>
+                      Hitung y = a(x)² + b(x) + c = 1(1)² - 2(1)² - 8 = -9
+                    </li>
+                  </ul>
+
+                  Koordinat: <b>(1, -9)</b>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Bagian Grafik -->
+            <div class="lg:w-1/2 flex justify-center items-center">
+              <div class="bg-gray-700 rounded-lg shadow-md p-6">
+                <img
+                  src="img/coso.png"
+                  alt="Grafik fungsi kuadrat f(x) = x² - 2x - 8"
+                  class="w-full h-auto rounded-lg"
+                />
+                <p class="text-gray-400 text-sm mt-4 text-center">
+                  Grafik fungsi kuadrat f(x) = x² - 2x - 8.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -672,7 +698,7 @@
             </div>
 
             <div>
-              <a href="https://www.instagram.com/sspaarbn/" class="btn">
+              <a href="https://www.instagram.com/farizarkammm/" class="btn">
                 <img
                   src="img/ig.svg"
                   alt="Instagram Logo"
